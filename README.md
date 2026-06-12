@@ -6,7 +6,7 @@
 <!-- 15s GIF: agent-top running fake-agent.js — bars climbing, cost ticking up,
      "⚠ possible loop" warning lighting up, then pressing 'k' to kill -->
 
-[![npm](https://img.shields.io/npm/v/agent-top)](https://www.npmjs.com/package/agent-top)
+[![npm](https://img.shields.io/npm/v/agent-top)](https://www.npmjs.com/package/@timothywalton/agent-top)
 [![License](https://img.shields.io/badge/license-MIT-green)]()
 
 ---
@@ -26,7 +26,7 @@ You can `htop` your CPU. You can `docker stats` your containers. But your AI age
 ## Install & run (under 60 seconds)
 
 ```bash
-npx agent-top -- python my_agent.py
+npx -p @timothywalton/agent-top agent-top -- python my_agent.py
 ```
 
 For live cost/token tracking, your agent prints one JSON line per event to stdout — these lines are automatically stripped from the visible output:
@@ -58,10 +58,10 @@ agent-top  pid 5821  uptime 00:01:42
 
 ## Pairs with Aegis-Node
 
-`agent-top` is the **dashboard**; [`aegis-node`](https://github.com/Timwal78/aegis-node) is the **enforcement layer**. Install both — `agent-top` detects `aegis-node` automatically and shows enforcement status in the footer. Use `agent-top` to *watch*, `aegis-node` to *guarantee* the limits hold even when you're not looking.
+`agent-top` is the **dashboard**; [`@timothywalton/aegis-node`](https://github.com/Timwal78/aegis-node) is the **enforcement layer**. Install both — `agent-top` detects `aegis-node` automatically and shows enforcement status in the footer. Use `agent-top` to *watch*, `aegis-node` to *guarantee* the limits hold even when you're not looking.
 
 ```bash
-npm install agent-top aegis-node
+npm install @timothywalton/agent-top @timothywalton/aegis-node
 ```
 
 ## Cost estimation
@@ -69,7 +69,7 @@ npm install agent-top aegis-node
 By default, cost is estimated at `$0.002 / 1k tokens` (rough blended small-model rate). Override with `--price-per-1k`:
 
 ```bash
-npx agent-top --price-per-1k 0.015 -- python my_agent.py
+npx -p @timothywalton/agent-top agent-top --price-per-1k 0.015 -- python my_agent.py
 ```
 
 Or report `cost_usd` directly per event for exact accounting:
@@ -86,7 +86,7 @@ Or report `cost_usd` directly per event for exact accounting:
 
 ## More from ScriptMasterLabs
 
-Part of the agent-economy infrastructure stack: [`aegis-node`](https://github.com/Timwal78/aegis-node) (kill switch), [`proof402-middleware`](https://www.npmjs.com/package/proof402-middleware) (x402 payments — RLUSD/XRPL or USDC/Base), and the full agent-payment architecture.
+Part of the agent-economy infrastructure stack: [`@timothywalton/aegis-node`](https://github.com/Timwal78/aegis-node) (kill switch), [`proof402-middleware`](https://www.npmjs.com/package/proof402-middleware) (x402 payments — RLUSD/XRPL or USDC/Base), and the full agent-payment architecture.
 
 → [scriptmasterlabs.com/stack](https://scriptmasterlabs.com/stack) · [Full architecture map](https://github.com/Timwal78/SqueezeOS/blob/main/docs/architecture/INDEX.md)
 

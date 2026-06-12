@@ -22,7 +22,7 @@ let AegisGuard = null;
 try {
   // Optional peer: if aegis-node is installed, agent-top's 'k' key and
   // the dashboard's loop/rate warnings can be backed by real enforcement.
-  AegisGuard = require("aegis-node").AegisNode;
+  AegisGuard = require("@timothywalton/aegis-node").AegisNode;
 } catch (_) {
   /* aegis-node not installed — dashboard-only mode */
 }

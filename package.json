@@ -1,5 +1,5 @@
 {
-  "name": "agent-top",
+  "name": "@timothywalton/agent-top",
   "version": "0.1.0",
   "description": "htop for AI agents. Live terminal dashboard for token burn rate, $ cost, API call rate, and action loops \u2014 press 'k' to kill a runaway agent on the spot. Built on aegis-node.",
   "main": "src/index.js",
@@ -31,6 +31,6 @@
   "homepage": "https://www.scriptmasterlabs.com",
   "author": "Script Master Labs LLC",
   "optionalDependencies": {
-    "aegis-node": "github:Timwal78/aegis-node"
+    "@timothywalton/aegis-node": "^0.1.0"
   }
 }
