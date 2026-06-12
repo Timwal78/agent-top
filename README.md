@@ -6,7 +6,7 @@
 <!-- 15s GIF: agent-top running fake-agent.js — bars climbing, cost ticking up,
      "⚠ possible loop" warning lighting up, then pressing 'k' to kill -->
 
-[![npm](https://img.shields.io/npm/v/agent-top)](https://www.npmjs.com/package/@timothywalton/agent-top)
+[![npm](https://img.shields.io/npm/v/%40timothywalton%2Fagent-top)](https://www.npmjs.com/package/@timothywalton/agent-top)
 [![License](https://img.shields.io/badge/license-MIT-green)]()
 
 ---
