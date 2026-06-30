@@ -1,0 +1,13 @@
+{
+  "name": "agent-top",
+  "description": "Agent discovery and ranking aggregator for the ScriptMasterLabs agent ecosystem",
+  "owner": "ScriptMasterLabs",
+  "github": "https://github.com/timwal78/agent-top",
+  "contact": "scriptmasterlabs@gmail.com",
+  "sovereign": {
+    "noMockData": true,
+    "liveDataOnly": true,
+    "noTelemetry": true,
+    "enforcedBy": ".github/workflows/sovereign-data-check.yml"
+  }
+}
